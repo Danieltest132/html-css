@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Modelo de caixas</title> 
+    <style>
+        h1 {
+            background-color: lightgrey;
+            height: 300px;
+            width: 300px;
+
+            /*ORDEM DA SHORTHAND DE BORDER
+            width style color
+            */
+            border:10px solid darkslategray;
+            
+            /*
+            ORDEM DA SHORTHAND DE PADDING
+            top right bottom left (sentido horário)
+            se colocar apenas dois valores será - top bottom (primeiro), right left (segundo)
+            */
+            padding: 10px;
+
+            /*PARA CENTRALIZAR A CAIXA
+            margin: auto;*/
+            /*ORDEM DA SHORTHAND DE MARGIN
+            mesma da shorthand do PADDING
+            */
+           margin: 20px auto 40px auto;
+    
+            /*ORDEM DA SHORTHAND DE OUTLINE
+            mesma da shorhand de BORDER
+            */
+            outline: 5px solid red;
+        }
+        a {
+            border-width: 20px;
+            border-style: solid;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas in-level</a>, vamos ver como tudo isso funciona</p>
+</body>
+</html> 
