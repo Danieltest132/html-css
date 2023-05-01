@@ -1,0 +1,60 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Passion One';
+    src: url(../fonts/passion/PassionOne-Regular.ttf) 
+    format('truetype');font-weight: normal;
+}
+@font-face {
+    font-family: 'Passion One';
+    src: url(../fonts/passion/PassionOne-Bold.ttf) format('truetype'); font-weight: bold;
+}
+@font-face {
+    font-family: 'Passion One';
+    src: url(../fonts/passion/PassionOne-Black.ttf) format('truetype'); font-weight: 900;
+}
+@font-face {
+    font-family: 'Sriracha';src: url(../fonts/srir/Sriracha-Regular.ttf) format('truetype'); font-weight: normal;
+}
+
+*{
+    font-family: var(--fonte1);
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+    --fonte1: verdana, geneva, tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriacha', cursive;
+}
+
+header {
+    background: black;
+}
+header > h1 {
+    font-size: 6.5em;
+    font-family: var(--fonte2);
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+header > p {
+    font-size: 1.1em; 
+    color: white;
+    text-align: center;
+    padding-bottom: 25px;   
+}
+header a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;   
+}
+header a:hover {
+    text-decoration: underline;
+}
+
+p.poema{
+    font-family: var(--fonte3);
+}
+section.normal {
+    border: 1px solid purple;
+}
