@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/*DEMAIS VERSÕES*/
+/*TYPICAL DEVICE BREAKPOINTS
+PEQUENAS TELAS: até 600px
+CELULAR: 601px até 768px
+TABLET: 769px - 992px 
+DESKTOP: 993px - 1200px
+GRANDES TELAS: acima de 1200px
+*/
+
+/*Essas configurações podem ser ignoradas pelo fato do site ter sido construído com mobile first
+@media screen and (max-width: 600px) {
+    
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    
+}*/
+@media print {
+    body {
+        background-image: url(../img/back-print.jpg); /*Desnecessário, porque não imprime bg em impressora*/
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main {
+        width: 90vw;
+        border: 2px solid black;
+    }
+    main::after {
+        content: 'Esta impressão foi feita através de um site criado por Daniel Fernandes como um exercício de HTML5 e CSS3';
+        text-decoration: overline;
+    }
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+    img#celular{display: none;}
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body {
+        background-image: url(../img/back-tablet.jpg);
+    }
+    img#celular{display: none;}
+    img#tablet{display: block;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    body {
+        background-image: url(../img/back-pc.jpg);
+    }
+    img#celular{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: block;}
+    img#tv{display: none;}
+}
+@media screen and (min-width: 1201px) {
+    body {
+        background-image: url(../img/back-tv.jpg);
+    }
+    main {
+        width: 80vw;
+    }
+    img#celular{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: block;}
+}
